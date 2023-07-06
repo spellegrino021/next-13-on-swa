@@ -2,7 +2,7 @@
   "private": true,
   "packageManager": "pnpm@8.2.0",
   "scripts": {
-    "build": "next build",
+    "build": "next build && mv .next/static .next/standalone/.next/static && mv public .next/standalone/public",
     "dev": "next dev",
     "lint": "next lint",
     "lint-staged": "lint-staged",
